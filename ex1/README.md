@@ -163,7 +163,7 @@ For population = 70,000, we predict a profit of 45342.450129
 
 <img src="img/ploat2.png" alt="Ploat Data">
 
- ### Visualizing J()
+ ### Visualizing J(&Theta;)
  
 <img src="img/surf.png" alt="Surf">
 <img src="img/contour.png" alt="Contour">
