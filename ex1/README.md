@@ -106,8 +106,9 @@ Return a 5 x 5 identity matrix.
     end
     end
     
- ## Prediction
+ ### Prediction
  
+
     X = [ones(m, 1), data(:,1)]; % Add a column of ones to x
     theta = zeros(2, 1); % initialize fitting parameters
 
@@ -133,8 +134,6 @@ Return a 5 x 5 identity matrix.
     % run gradient descent
     theta = gradientDescent(X, y, theta, alpha, iterations);
 
-### Gradient Descent - Non-vectorized 
-
     % print theta to screen
     fprintf('Theta found by gradient descent:\n');
     fprintf('%f\n', theta);
@@ -149,24 +148,22 @@ Return a 5 x 5 identity matrix.
 
     % Predict values for population sizes of 35,000 and 70,000
     predict1 = [1, 3.5] *theta;
-    fprintf('For population = 35,000, we predict a profit of %f\n',...
-        predict1*10000);
+    fprintf('For population = 35,000, we predict a profit of %f\n',predict1*10000);
     predict2 = [1, 7] * theta;
-    fprintf('For population = 70,000, we predict a profit of %f\n',...
-        predict2*10000);
-
-    fprintf('Program paused. Press enter to continue.\n');
-    pause;
+    fprintf('For population = 70,000, we predict a profit of %f\n',predict2*10000);
 
 
-    Theta found by gradient descent:  
-    -3.630291  
-    1.166362  
 
-
+Theta found by gradient descent:  
+-3.630291  
+1.166362  
 
 For population = 35,000, we predict a profit of 4519.767868  
 For population = 70,000, we predict a profit of 45342.450129  
 
 <img src="img/ploat2.png" alt="Ploat Data">
 
+ ### Visualizing J()
+ 
+<img src="img/surf.png" alt="Surf">
+<img src="img/contour.png" alt="Contour">
